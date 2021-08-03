@@ -11,7 +11,7 @@ class constants:
 
 def save_some_data():
     df = pd.DataFrame([[1, 3], [2, 4], [3, 5]])
-    df.to_csv(CONSTANTS["RESULTS_DIR"] / "output.csv")
+    df.to_csv(CONSTANTS["RESULTS_DIR"] / "output.csv", index=False)
 
 
 def check_resource_availability():
